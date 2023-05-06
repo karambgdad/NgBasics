@@ -13,6 +13,16 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Angular-Basics-\
+npm install g @angular/cli@latest                        \
+ng --version                                             \
+ng new project-name                                      \
+ng serve --port ANOTHERPORT                              \
+ng serve                                                 \
+ng new my-first-app --no-strict                          \
+"FormsModule" as an import to set data binding in forms  \
+ npm i --save bootstrap@3                                \
+ 
 
 ## Running unit tests
 
