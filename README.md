@@ -22,6 +22,7 @@ ng serve                                                 \
 ng new my-first-app --no-strict                          \
 "FormsModule" as an import to set data binding in forms  \
  npm i --save bootstrap@3                                \
+ ng g component name                                     \
  
 
 ## Running unit tests
