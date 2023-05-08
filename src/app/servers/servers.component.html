@@ -4,6 +4,20 @@ class="form-control"
 (input)="onUpdaterServerName($event)">
 <p>Passing and Using Data with Event Binding from input : {{serverName}}</p>
 
+<br><br><p> With two-way data binding,
+we combine property and event binding.</p>
+<input type="text" 
+class="form-control"
+[(ngModel)] = "serverName">
+<p>This setup will do the following.
+It will trigger on the input event
+and update the value of server name
+in our component automatically.
+On the other hand, since it is two-way binding
+it will also update the value
+of the input element
+if we change server name somewhere else.</p><br><br> 
+
 <button class="btn btn-primary" [disabled]="!allowNewServer" 
 (click)="onCreateServer()">
     Add Server
@@ -12,6 +26,9 @@ class="form-control"
 <br> this is property binding [ ] = " "
 <p>this is string Interpolation: {{allowNewServer}}</p>
 <!-- <p> this is property binding:</p> <p [innerText]="allowNewServer"> </p> -->
-<h3><p>this is event binding click event for button: {{serverCreationStatus}}</p></h3>
+<h3><p>this is event binding click event for button 
+   <br> and we updated the code so here 
+   <br> With that, we're using all four forms
+   <br> of data binding together: {{serverCreationStatus}}</p></h3>
 <app-server></app-server>
 <app-server></app-server>
