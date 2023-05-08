@@ -1,6 +1,17 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
-this is property binding [ ] = " "
-<p>this is string Interpolation:  {{allowNewServer}}</p>
-<p> this is property binding:</p> <p [innerText]="allowNewServer"> </p>
+<label>Server Name</label>
+<input type="text" 
+class="form-control"
+(input)="onUpdaterServerName($event)">
+<p>Passing and Using Data with Event Binding from input : {{serverName}}</p>
+
+<button class="btn btn-primary" [disabled]="!allowNewServer" 
+(click)="onCreateServer()">
+    Add Server
+</button>
+
+<br> this is property binding [ ] = " "
+<p>this is string Interpolation: {{allowNewServer}}</p>
+<!-- <p> this is property binding:</p> <p [innerText]="allowNewServer"> </p> -->
+<h3><p>this is event binding click event for button: {{serverCreationStatus}}</p></h3>
 <app-server></app-server>
 <app-server></app-server>
